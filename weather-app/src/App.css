@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+  min-height: 100vh;
+}
+
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start; 
+  }
+}
+
+.app-container {
+  max-width: 420px;
+  width: 100%;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 16px;
+    margin-top: 20px;
+  }
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #0f172a;
+}
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5f5;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-box input:focus {
+  border-color: #2563eb;
+}
+
+.search-box button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box button {
+    width: 100%;
+  }
+}
+
+ .weather-card {
+  background: white;
+  border-radius: 14px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.weather-card h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #0f172a;
+}
+
+.weather-card .temp {
+  font-size: 42px;
+  font-weight: 600;
+  margin: 12px 0;
+  color: #020617;
+}
+
+.weather-card .condition {
+  color: #475569;
+  text-transform: capitalize;
+}
+.status {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.status.error {
+  color: #dc2626;
+}
+
+.status.loading {
+  color: #2563eb;
+}
+.forecast-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.forecast-title {
+  margin-bottom: 15px;
+  color: #0f172a;
+}
+
+.forecast-grid {
+  display: flex;
+  justify-content: center;   
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.forecast-card {
+  background: white;
+  border-radius: 12px;
+  padding: 12px;
+  width: 110px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.forecast-date {
+  font-size: 12px;
+  color: #475569;
+  margin-bottom: 6px;
+}
+
+.forecast-temp {
+  font-weight: bold;
+  margin: 6px 0;
+}
+
+.forecast-condition {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: #64748b;
+}
+
+@media (max-width: 600px) {
+  .forecast-card {
+    width: 95px;
+    padding: 10px;
+  }
+}
