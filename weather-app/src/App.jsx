@@ -22,7 +22,7 @@ function App() {
 
   try {
     const response = await fetch(
-      `http://localhost:5000/api/weather?city=${city}`
+      `http://weather-app-backend-1-zl8p.onrender.com/api/weather?city=${city}`
     );
 
     const data = await response.json();
@@ -32,7 +32,7 @@ function App() {
     }
     setWeatherData(data);
     const forecastRes = await fetch(
-      `http://localhost:5000/api/forecast?city=${city}`
+      `http://weather-app-backend-1-zl8p.onrender.com/api/forecast?city=${city}`
     );
     const forecastData = await forecastRes.json();
 
