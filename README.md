@@ -1,4 +1,4 @@
-# Weather App 🌦️
+# Weather App 
 
 A full-stack weather application that displays real-time weather and 5-day forecast data.
 
